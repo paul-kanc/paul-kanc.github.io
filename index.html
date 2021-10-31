@@ -2,50 +2,106 @@
 <html>
 	<head>
 		<style type="text/css">
+
+			::-webkit-scrollbar { 
+    			width: 10px;
+    			height: 10px;
+    			border: none;
+    			background: transparent;
+			}
+
+			::-webkit-scrollbar-thumb {
+    			border-radius: 8px;
+    			background: rgb(100, 0, 255);
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background: rgb(255, 255, 255);
+			}
+
+			::-webkit-scrollbar-track {
+    			background-image: url("images/yLine.png");
+    			background-repeat: repeat-y;
+    			background-size: contain;
+			}
+
+			::-webkit-scrollbar-track:hover {
+				background-image: url("images/yLineHover.png");
+				background-repeat: repeat-y;
+			}
+
+			/* below 820px, the track image should be removed */
+
    			body {
       			background-image: url("images/background.jpg");
-      			color: white;
+      			background-attachment: fixed;
+      			background-color: rgb(0, 0, 0);
+      			color: rgb(255, 255, 255);
+      			font-family: Arial, Helvetica, sans-serif;
       		}
 
-   			a {
-      			color: rgb(225,225,255);
-   				text-decoration: underline;
+      		table {
+      			background-color: rgb(0, 0, 0);
+      			border: 1px solid rgb(255, 255, 255);
+      			border-radius: 20px;
+      			padding: 3%;
+      			margin-left: auto;
+  				margin-right: auto;
+      		}
+
+   			td.info {
+     			vertical-align: top;
    			}
+
+      		h1 {
+      			text-shadow: 0px 5px rgb(100, 0, 255);
+      			font-weight: bold;
+      		}
+
+      		h2 {
+      			text-shadow: 0px 2px rgb(100, 0, 255);
+      			font-weight: bold;
+      		}
 
    			img {
       			margin: 15px 15px 15px 15px;
    			}
 
+   			a {
+      			color: rgb(255, 255, 255);
+   				text-decoration: underline;
+   			}
+
+   			a:hover {
+   				color: rgba(255, 255, 255, 0);
+   				text-shadow: 0px -3px rgb(255, 255, 255);
+   			}
+
    			hr {
-      			border-top: 1px solid gray;
+      			border: 1px solid rgb(255, 255, 255);
   			}
 
-   			.infotd {
-     			vertical-align: top;
-   			}
  		</style>
 	</head>
-	<body style="background-color:rgb(50,50,50); color:white">
-		<table width= 1200px>
+	<body>
+		<table width=70%>
   			<tr>
-    			<td class="infotd">
-      				<h3>Paulius KANCLERIS</h3>
+    			<td class="info">
+      				<h1>Paulius KANCLERIS</h1>
       				<p>
       					-
 	  				</p> 
     			</td>
     			<td>
-					<img src="images/me.png" width=300px></img>
+					<img src="images/me.png" alt="Picture of me" width=150px style="margin-left: 25%"></img>
     			</td>
   			</tr>
-  			<tr>
-    			<td colspan=2>
-					<hr>
-    			</td>
-  			</tr>
+  		</table>
+  		<br>
+  		<table width=70%>
  			<tr>
   				<td class="infotd">
-    				<h3>Bootcamp 2020: Pong</h3>
+    				<h2>Bootcamp 2020: Pong</h2>
     				<p>
 						This is my first programming project, concluding the 2 week Programming Bootcamp at City (2020). Using Processing, I
 						have demonstrated a comprehensive understanding of the use of 'if' statements and classes. I have also shown some
@@ -69,7 +125,7 @@
   				</td>
   			</tr>
 			<tr>
- 				<td colspan = 2 align=center>
+ 				<td colspan=2 align=center>
 					<img src="images/pong/start screen.png" width="300px">
 					<img src="images/pong/difficulty screen.png" width="300px">
 					<img src="images/pong/gameVPC.png" width="300px">
@@ -83,8 +139,8 @@
     			</td>
   			</tr>
   			<tr>
-  				<td class="infotd">
-    				<h3>Java 2021: Jungle Jumper</h3>
+  				<td class="info">
+    				<h2>Java 2021: Jungle Jumper</h2>
     				<p>
 						For my 1st year Java project, I have created a platform game with sound. The start of the game will present the user
 						with an interface where they can choose between 3 difficulties and whether they want to modify the regular gameplay
@@ -105,7 +161,7 @@
   				</td>
   			</tr>
 			<tr>
- 				<td colspan = 2 align=center>
+ 				<td colspan=2 align=center>
 					<img src="images/jungleJumper/mainMenu.png" width="300px">
 					<img src="images/jungleJumper/level1.png" width="300px">
 					<img src="images/jungleJumper/level6.png" width="300px">
