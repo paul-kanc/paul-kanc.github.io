@@ -111,7 +111,7 @@
   			</tr>
   		</table>
   		<br>
-  		<table width=70%>
+  		<!-- <table width=70%>
   			<tr>
     			<td class="info">
       				<h2>Contents</h2>
@@ -121,25 +121,40 @@
     			</td>
   			</tr>
   		</table>
-  		<br>
+  		<br> -->
   		<table width=70%>
  			<tr>
   				<td class="infotd">
-    				<h2>Bootcamp 2020: Pong</h2>
+    				<h2>Pong</h2>
     				<p>
-						This is my first programming project, concluding the 2 week Programming Bootcamp at City (2020). Using Processing, I
-						have demonstrated a comprehensive understanding of the use of 'if' statements and classes. I have also shown some
-						understanding of how randomness can be used and how physics principles can be recreated.
-						I began by creating the class that will be used when the game starts. This consisted of the ball having to move,
-						bounce off the paddles and the walls, and the movement of the paddles. I then proceeded by creating the main menu and
-						the screens once someone has won. I then decided to create an additional gamemode where 1 player is able to play
-						against the computer. This resulted in me having to create a screen to select the number of players and a screen for
-						the computer winning. My final addition was having the player select between 3 difficulties when they play against
-						the computer. This is where I used randomness to determine how accurate the computer was at hitting the ball back.
-						The final steps were to add sound to make the game more interesting to play.
+						This was a project that concluded a 2 week Programming Bootcamp (2020) at City, University of London. Using
+						Processing, nI demonstrated a comprehensive understanding of the use of classes and 'if' statements. I also showed
+						some understanding of how the random function can be used and how physics principles can be recreated.
+					</p>
+					<p>
+						I began by creating the class for the gameplay screen. This consisted of ball movement,collision of the ball with
+						the paddles and walls, and the controls for the paddles. To make the ball move, I had to make the x and y
+						co-ordinates update by a variable that I named 'speed'. The collision was created using if statements comparing the
+						co-ordiantes of the ball and paddles. Finally, I created the menu and victory screans to give some context to the
+						game.
+					</p>
+					<p>
+						This was as far as my designs went but I decided to expand on them. I wanted to create an additional gamemode where
+						1 player was able to play against the computer. This resulted in me having to create a screen to select the number of
+						players and a screen for the player losing. My final addition was having the player select between 3 difficulties
+						when they play against the computer. This is where I used randomness to determine how accurate the computer was at
+						hitting the ball back. The final step was to add sound to make the game more interesting to play.
     				</p>
     				<p>
-      					Check out the code on <a href="https://github.com/PaulKanc/adbt199.git">Github</a>.
+    					This project taught me the importance of efficient code. After adding sound, I found that it would eventualy start to
+    					bug. This was because it would create new sound files everytime I restarted the game using the UI. To fix this, I
+    					made sure that the setup method would only run once at the start. Something that I could have improved was the
+    					movement of the computer. A times, it would move a lot faster than a player would be able to but it would then miss
+    					the ball. This makes it seem like the computer missed on purpose. To make the computer move slower, I would have to
+    					increase the delay between the up or down shifts.
+    				</p>
+    				<p>
+      					Check out the code on <a href="https://github.com/paul-kanc/Pong">Github</a>.
     				</p>
     			</td>
   				<td>
@@ -165,7 +180,7 @@
   			</tr>
   			<tr>
   				<td class="info">
-    				<h2>Java 2021: Jungle Jumper</h2>
+    				<h2>Forest Jumper</h2>
     				<p>
 						For my 1st year Java project, I have created a platform game with sound. The start of the game will present the user
 						with an interface where they can choose between 3 difficulties and whether they want to modify the regular gameplay
