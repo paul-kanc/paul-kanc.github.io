@@ -94,7 +94,7 @@
  		</style>
 	</head>
 	<body>
-		<table width=70%>
+		<table width=85%>
   			<tr>
     			<td class="info">
       				<h1>Paulius KANCLERIS</h1>
@@ -111,7 +111,7 @@
   			</tr>
   		</table>
   		<br>
-  		<!-- <table width=70%>
+  		<!-- <table width=85%>
   			<tr>
     			<td class="info">
       				<h2>Contents</h2>
@@ -122,17 +122,17 @@
   			</tr>
   		</table>
   		<br> -->
-  		<table width=70%>
+  		<table width=85%>
  			<tr>
   				<td class="infotd">
     				<h2>Pong</h2>
     				<p>
 						This was a project that concluded a 2 week Programming Bootcamp (2020) at City, University of London. Using
-						Processing, nI demonstrated a comprehensive understanding of the use of classes and 'if' statements. I also showed
+						Processing, I demonstrated a comprehensive understanding of the use of classes and 'if' statements. I also showed
 						some understanding of how the random function can be used and how physics principles can be recreated.
 					</p>
 					<p>
-						I began by creating the class for the gameplay screen. This consisted of ball movement,collision of the ball with
+						I began by creating the class for the gameplay screen. This consisted of ball movement, collision of the ball with
 						the paddles and walls, and the controls for the paddles. To make the ball move, I had to make the x and y
 						co-ordinates update by a variable that I named 'speed'. The collision was created using if statements comparing the
 						co-ordiantes of the ball and paddles. Finally, I created the menu and victory screans to give some context to the
@@ -182,7 +182,37 @@
   				<td class="info">
     				<h2>Forest Jumper</h2>
     				<p>
-						For my 1st year Java project, I have created a platform game with sound. The start of the game will present the user
+						This project was completed as a project for a Java module during my 1st year of university. I created a platform
+						game with levels, sound, a GUI and a save/load feature. In this project, I demonstarted an understanding of an
+						object-oriented language features such as inheritance and encapsulation.
+					</p>
+					<p>
+						I had to import a physic engine provided to me by the university. Then I started by playing around with the basic
+						features such as collision to walk on the floor and collect coins. Once I was able to end the game when a level
+						was completed, I added vilains and increased the number of levels. The villains would remove the players lives and
+						make the player start the level from the beginning if they collide. I also added instructions and the ability to
+						pause the gam.
+						
+					</p>
+					<p>
+						Although the game was functioning, I wanted to make it more polished. To do this, I added a powerup, sound and a GUI.
+						The powerup was a bomb that the player had to pick up to kill the villains, which was required to complete the game.
+						Every time I added a new sound clip, I surrounded it with a try-catch block. This was so I could print an exception to
+						the console if there were errors. As I was creating the GUI, I decided to add 3 difficulties and a low gravity mode.
+						The difficulties would change the speed of the villains and the low gravity mode would edit the simulated gravity.
+					</p>
+					<p>
+						I also added a saving/loading feature and a highscore table. If the game is being saved, it would save the neccessary
+						information to a text file. When loading it back from the main menu, the game would look for that file and read it.
+						The highscore table would also save and read from a text file. The table is presented when the player finishes the
+						game and a score can only be saved at this point. This is because the score is based on how long the player takes to
+						finish the game.
+					</p>
+					<p>
+						-
+					</p>
+					<p>
+						The start of the game will present the user
 						with an interface where they can choose between 3 difficulties and whether they want to modify the regular gameplay
 						with a low gravity mode. The purpose of the game is to avoid the enemies and collect coins to complete each level.
 						The player has 3 lives which will be lost 1 by 1 when they collide with an enemy. The player also has the abilty to
