@@ -99,10 +99,11 @@
     			<td class="info">
       				<h1>Paulius KANCLERIS</h1>
       				<p>
-      					A diligent and punctual Computer Science student looking for a job to broaden his skillset and experience. Having
-      					completed some work in other sectors, now pursues a role in IT. After receiving the top grades from 6th Form and an
-      					average of 85% in the first year of a bachelor’s degree, is accustomed to meeting strict deadlines as an individual
-      					and as a part of a team.
+      					A diligent and committed Computer Science student looking for a placement/internship role in the IT sector to
+      					broaden my skill set. Having received high grades from 6th Form and the first year of a bachelor’s degree, I now
+      					pursue the experience required to start my career in technology. My long-term goal currently is to lead large
+      					projects that have significant impacts on their audience. This would also be ideally linked to interests such as
+      					basketball or gaming. 
 	  				</p> 
     			</td>
     			<td>
@@ -139,19 +140,19 @@
 						game.
 					</p>
 					<p>
-						This was as far as my designs went but I decided to expand on them. I wanted to create an additional gamemode where
+						This was as far as my designs went but I decided to expand on them. I wanted to create an additional game mode where
 						1 player was able to play against the computer. This resulted in me having to create a screen to select the number of
 						players and a screen for the player losing. My final addition was having the player select between 3 difficulties
 						when they play against the computer. This is where I used randomness to determine how accurate the computer was at
 						hitting the ball back. The final step was to add sound to make the game more interesting to play.
     				</p>
     				<p>
-    					This project taught me the importance of efficient code. After adding sound, I found that it would eventualy start to
-    					bug. This was because it would create new sound files everytime I restarted the game using the UI. To fix this, I
-    					made sure that the setup method would only run once at the start. Something that I could have improved was the
-    					movement of the computer. A times, it would move a lot faster than a player would be able to but it would then miss
-    					the ball. This makes it seem like the computer missed on purpose. To make the computer move slower, I would have to
-    					increase the delay between the up or down shifts.
+    					This project taught me the importance of efficient code. After adding sound, I found that it would eventually start to
+    					bug. This was because it would create new sound files every time I restarted the game using the UI. To fix this, I
+    					made sure the sound files were only created once in the setup method at the start. Something that I could have
+    					improved was the movement of the computer. At times, it would move a lot faster than a player would be able to but it
+    					would then miss the ball. This makes it seem like the computer missed on purpose. To make the computer move slower, I
+    					would have to increase the delay between the up or down movements.
     				</p>
     				<p>
       					Check out the code on <a href="https://github.com/paul-kanc/Pong">Github</a>.
@@ -189,9 +190,9 @@
 					<p>
 						I had to import a physic engine provided to me by the university. Then I started by playing around with the basic
 						features such as collision to walk on the floor and collect coins. Once I was able to end the game when a level
-						was completed, I added vilains and increased the number of levels. The villains would remove the players lives and
+						was completed, I added villains and increased the number of levels. The villains would remove the player's lives and
 						make the player start the level from the beginning if they collide. I also added instructions and the ability to
-						pause the gam.
+						pause the game.
 						
 					</p>
 					<p>
@@ -202,28 +203,20 @@
 						speed of the villains and the low gravity mode would edit the simulated gravity.
 					</p>
 					<p>
-						I also added a saving/loading feature and a highscore table. If the game is being saved, it would save the neccessary
+						I also added a saving/loading feature and a high score table. If the game is being saved, it would save the necessary
 						information to a text file. When loading it back from the main menu, the game would look for that file and read it.
-						The highscore table would also save and read from a text file. The table is presented when the player finishes the
+						The high score table would also save and read from a text file. The table is presented when the player finishes the
 						game and a score can only be saved at this point. This is because the score is based on how long the player takes to
 						finish the game.
 					</p>
 					<p>
-						Something that I learned from this project was how to 
+						Something new that I learned from this project was how I can keep my program running even after it encounters an
+						error. I used try-catch blocks when introducing sound clips. My game shouldn't have to crash if a sound file wasn't
+						found because it's not an error that changes the game drastically. Something that I could have improved was my use
+						of comments and the tidiness of my code. When looking over my code during development, I found that I would
+						occasionally forget the functions of certain lines. Using comments would have allowed me to create reminders of what
+						those lines did. Tidier code would have also made tracking back quicker.
 					</p>
-					<!--
-						(throwing exceptions, how that protects the programs from bad stuff)
-						The start of the game will present the user
-						with an interface where they can choose between 3 difficulties and whether they want to modify the regular gameplay
-						with a low gravity mode. The purpose of the game is to avoid the enemies and collect coins to complete each level.
-						The player has 3 lives which will be lost 1 by 1 when they collide with an enemy. The player also has the abilty to
-						regain a heart by collecting one in certain levels. Once the player reaches the middle of the game, they have to
-						pick up a bomb which allows them to kill enemies. They then have to move back through each level, killing enemies.
-						The game is complete when the player gets back to the first level. There is a highscore table at the end if you win.
-						The scores are based on the amount of time it takes the player to complete the game. If they want to save their score,
-						they can input their name and their score will be saved. At any point during the game, the player can save their
-						progress and return by selecting 'load' in the main menu.
-    				-->
     			</td>
   				<td>
 					<iframe width="640" height="360"
