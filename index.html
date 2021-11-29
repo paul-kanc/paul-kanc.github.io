@@ -49,10 +49,15 @@
       			padding: 3%;
       			margin-left: auto;
   				margin-right: auto;
+  				width: 85%;
       		}
 
    			td.info {
      			vertical-align: top;
+   			}
+
+   			td.project {
+   				display: flex;
    			}
 
       		h1 {
@@ -75,6 +80,10 @@
       			box-shadow: 0px 1px 5px white, -1px 0px 5px white, 0px -1px 5px white, -1px -1px 5px white;
    			}
 
+   			div.project {
+   				flex-basis: 60%;
+   			}
+
    			a {
       			color: rgb(255, 255, 255);
    				text-decoration: underline;
@@ -86,19 +95,33 @@
    			}
 
    			iframe {
-   				border: none;
+   				float: right;
+   				margin: auto;
+   				display: block;
+   				width: 640px;
+   				height: 360px;
    			}
 
    			hr {
       			border: 1px solid rgb(255, 255, 255);
   			}
 
+  			@media only screen and (max-width: 1600px) {
+  				td.project {
+    				display: inline;
+  				}
+
+  				iframe{
+  					float: none;
+  				}
+			}
+
  		</style>
 	</head>
 	<body>
-		<table width=85%>
+		<table>
   			<tr>
-    			<td class="infotd">
+    			<td class="info">
       				<h1>Paulius KANCLERIS</h1>
       				<p>
       					A diligent and committed Computer Science student looking for a placement/internship role in the IT sector to
@@ -114,7 +137,7 @@
   			</tr>
   		</table>
   		<br>
-  		<!-- <table width=85%>
+  		<!-- <table>
   			<tr>
     			<td class="info">
       				<h2>Contents</h2>
@@ -125,122 +148,119 @@
   			</tr>
   		</table>
   		<br> -->
-  		<table width=85%>
- 			<tr>
-  				<td class="infotd">
-    				<h2>Pong</h2>
-    				<p>
-						This was a project that concluded a 2 week Programming Bootcamp (2020) at City, University of London. Using
-						Processing, I demonstrated a comprehensive understanding of the use of classes and 'if' statements. I also showed
-						some understanding of how the random function can be used and how physics principles can be recreated.
-					</p>
-					<p>
-						I began by creating the class for the gameplay screen. This consisted of ball movement, collision of the ball with
-						the paddles and walls, and the controls for the paddles. To make the ball move, I had to make the x and y
-						co-ordinates update by a variable that I named 'speed'. The collision was created using if statements comparing the
-						co-ordiantes of the ball and paddles. Finally, I created the menu and victory screans to give some context to the
-						game.
-					</p>
-					<p>
-						This was as far as my designs went but I decided to expand on them. I wanted to create an additional game mode where
-						1 player was able to play against the computer. This resulted in me having to create a screen to select the number of
-						players and a screen for the player losing. My final addition was having the player select between 3 difficulties
-						when they play against the computer. This is where I used randomness to determine how accurate the computer was at
-						hitting the ball back. The final step was to add sound to make the game more interesting to play.
-    				</p>
-    				<p>
-    					This project taught me the importance of efficient code. After adding sound, I found that it would eventually start to
-    					bug. This was because it would create new sound files every time I restarted the game using the UI. To fix this, I
-    					made sure the sound files were only created once in the setup method at the start. Something that I could have
-    					improved was the movement of the computer. At times, it would move a lot faster than a player would be able to but it
-    					would then miss the ball. This makes it seem like the computer missed on purpose. To make the computer move slower, I
-    					would have to increase the delay between the up or down movements.
-    				</p>
-    				<p>
-      					Check out the code on <a href="https://github.com/paul-kanc/Pong">Github</a>.
-    				</p>
-    			</td>
-  				<td>
-					<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/AGHxM_9yC-U" title="YouTube video player"
-					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen>
+  		<table>
+  			<tr>
+  				<td class="info project">
+  					<div class="project">
+    					<h2>Pong</h2>
+    					<p>
+							This was a project that concluded a 2 week Programming Bootcamp (2020) at City, University of London. Using
+							Processing, I demonstrated a comprehensive understanding of the use of classes and 'if' statements. I also showed
+							some understanding of how the random function can be used and how physics principles can be recreated.
+						</p>
+						<p>
+							I began by creating the class for the gameplay screen. This consisted of ball movement, collision of the ball with
+							the paddles and walls, and the controls for the paddles. To make the ball move, I had to make the x and y
+							co-ordinates update by a variable that I named 'speed'. The collision was created using if statements comparing the
+							co-ordiantes of the ball and paddles. Finally, I created the menu and victory screans to give some context to the
+							game.
+						</p>
+						<p>
+							This was as far as my designs went but I decided to expand on them. I wanted to create an additional game mode where
+							1 player was able to play against the computer. This resulted in me having to create a screen to select the number of
+							players and a screen for the player losing. My final addition was having the player select between 3 difficulties
+							when they play against the computer. This is where I used randomness to determine how accurate the computer was at
+							hitting the ball back. The final step was to add sound to make the game more interesting to play.
+    					</p>
+    					<p>
+    						This project taught me the importance of efficient code. After adding sound, I found that it would eventually start to
+    						bug. This was because it would create new sound files every time I restarted the game using the UI. To fix this, I
+    						made sure the sound files were only created once in the setup method at the start. Something that I could have
+    						improved was the movement of the computer. At times, it would move a lot faster than a player would be able to but it
+    						would then miss the ball. This makes it seem like the computer missed on purpose. To make the computer move slower, I
+    						would have to increase the delay between the up and down movements.
+    					</p>
+    					<p>
+      						Check out the code on <a href="https://github.com/paul-kanc/Pong">Github</a>.
+    					</p>
+    				</div>
+					<iframe src="https://www.youtube-nocookie.com/embed/AGHxM_9yC-U" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
   				</td>
   			</tr>
-			<tr>
- 				<td colspan=2 align=center>
-					<img src="images/pong/start screen.png" width="300px">
-					<img src="images/pong/difficulty screen.png" width="300px">
-					<img src="images/pong/gameVPC.png" width="300px">
-					<img src="images/pong/game.png" width="300px">
-					<img src="images/pong/score.png" width="300px">
+  			<tr>
+ 				<td align=center>
+					<img src="images/pong/start screen.png" width="300">
+					<img src="images/pong/difficulty screen.png" width="300">
+					<img src="images/pong/gameVPC.png" width="300">
+					<img src="images/pong/game.png" width="300">
+					<img src="images/pong/score.png" width="300">
 				</td>
  			</tr>
  			<tr>
-    			<td colspan=2>
+    			<td>
 					<hr>
     			</td>
   			</tr>
   			<tr>
-  				<td class="info">
-    				<h2>Forest Jumper</h2>
-    				<p>
-						This project was completed for a Java module during my 1st year of university. I created a platform
-						game with levels, sound, a GUI and a save/load feature. In this project, I demonstarted an understanding of an
-						object-oriented language features such as inheritance and encapsulation.
-					</p>
-					<p>
-						I had to import a physic engine provided to me by the university. Then I started by playing around with the basic
-						features such as collision to walk on the floor and collect coins. Once I was able to end the game when a level
-						was completed, I added villains and increased the number of levels. The villains would remove the player's lives and
-						make the player start the level from the beginning if they collide. I also added instructions and the ability to
-						pause the game.
-						
-					</p>
-					<p>
-						Although the game was functioning, I wanted to make it more polished. To do this, I added a powerup, sound and a GUI.
-						The powerup was a bomb that the player had to pick up to kill the villains. Every time I added a new sound clip, I
-						surrounded it with a try-catch block. This was so I could print an exception to the console if there were errors. As
-						I was creating the GUI, I decided to add 3 difficulties and a low gravity mode. The difficulties would change the
-						speed of the villains and the low gravity mode would edit the simulated gravity.
-					</p>
-					<p>
-						I also added a saving/loading feature and a high score table. If the game is being saved, it would save the necessary
-						information to a text file. When loading it back from the main menu, the game would look for that file and read it.
-						The high score table would also save and read from a text file. The table is presented when the player finishes the
-						game and a score can only be saved at this point. This is because the score is based on how long the player takes to
-						finish the game.
-					</p>
-					<p>
-						Something new that I learned from this project was how I can keep my program running even after it encounters an
-						error. I used try-catch blocks when introducing sound clips. My game shouldn't have to crash if a sound file wasn't
-						found because it's not an error that changes the game drastically. Something that I could have improved was my use
-						of comments and the tidiness of my code. When looking over my code during development, I found that I would
-						occasionally forget the functions of certain lines. Using comments would have allowed me to create reminders of what
-						those lines did. Tidier code would have also made tracking back quicker.
-					</p>
-					<p>
-      					Check out the code on <a href="https://github.com/paul-kanc/ForrestJumper">Github</a>.
-    				</p>
-    			</td>
-  				<td>
-					<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/VK7lq2n3gfs" title="YouTube video player"
-					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen>
+  				<td class="info project">
+  					<div class="project">
+    					<h2>Forest Jumper</h2>
+    					<p>
+							This project was completed for a Java module during my 1st year of university. I created a platform
+							game with levels, sound, a GUI and a save/load feature. In this project, I demonstarted an understanding of an
+							object-oriented language features such as inheritance and encapsulation.
+						</p>
+						<p>
+							I had to import a physic engine provided to me by the university. Then I started by playing around with the basic
+							features such as collision to walk on the floor and collect coins. Once I was able to end the game when a level
+							was completed, I added villains and increased the number of levels. The villains would remove the player's lives and
+							make the player start the level from the beginning if they collide. I also added instructions and the ability to
+							pause the game.
+						</p>
+						<p>
+							Although the game was functioning, I wanted to make it more polished. To do this, I added a powerup, sound and a GUI.
+							The powerup was a bomb that the player had to pick up to kill the villains. Every time I added a new sound clip, I
+							surrounded it with a try-catch block. This was so I could print an exception to the console if there were errors. As
+							I was creating the GUI, I decided to add 3 difficulties and a low gravity mode. The difficulties would change the
+							speed of the villains and the low gravity mode would edit the simulated gravity.
+						</p>
+						<p>
+							I also added a saving/loading feature and a high score table. If the game is being saved, it would save the necessary
+							information to a text file. When loading it back from the main menu, the game would look for that file and read it.
+							The high score table would also save and read from a text file. The table is presented when the player finishes the
+							game and a score can only be saved at this point. This is because the score is based on how long the player takes to
+							finish the game.
+						</p>
+						<p>
+							Something new that I learned from this project was how I can keep my program running even after it encounters an
+							error. I used try-catch blocks when introducing sound clips. My game shouldn't have to crash if a sound file wasn't
+							found because it's not an error that changes the game drastically. Something that I could have improved was my use
+							of comments and the tidiness of my code. When looking over my code during development, I found that I would
+							occasionally forget the functions of certain lines. Using comments would have allowed me to create reminders of what
+							those lines did. Tidier code would have also made tracking back quicker.
+						</p>
+						<p>
+      						Check out the code on <a href="https://github.com/paul-kanc/ForrestJumper">Github</a>.
+    					</p>
+    				</div>
+					<iframe src="https://www.youtube-nocookie.com/embed/VK7lq2n3gfs" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
   				</td>
   			</tr>
 			<tr>
- 				<td colspan=2 align=center>
-					<img src="images/jungleJumper/mainMenu.png" width="300px">
-					<img src="images/jungleJumper/level1.png" width="300px">
-					<img src="images/jungleJumper/level6.png" width="300px">
-					<img src="images/jungleJumper/level9.png" width="300px">
-					<img src="images/jungleJumper/highscores.png" width="300px">
+ 				<td align=center>
+					<img src="images/forrestJumper/mainMenu.png" width="300">
+					<img src="images/forrestJumper/level1.png" width="300">
+					<img src="images/forrestJumper/level6.png" width="300">
+					<img src="images/forrestJumper/level9.png" width="300">
+					<img src="images/forrestJumper/highscores.png" width="300">
 				</td>
  			</tr>
  			<tr>
-    			<td colspan=2>
+    			<td>
 					<hr>
     			</td>
   			</tr>
