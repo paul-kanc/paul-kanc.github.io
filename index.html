@@ -5,121 +5,7 @@
 		lightbox/gallery
 	-->
 	<head>
-		<style type="text/css">
-
-			::-webkit-scrollbar { 
-    			width: 10px;
-    			height: 10px;
-    			border: none;
-    			background: transparent;
-			}
-
-			::-webkit-scrollbar-thumb {
-    			border-radius: 8px;
-    			background: rgb(100, 0, 255);
-			}
-
-			::-webkit-scrollbar-thumb:hover {
-				background: rgb(255, 255, 255);
-			}
-
-			::-webkit-scrollbar-track {
-    			background-image: url("images/yLine.png");
-    			background-repeat: repeat-y;
-			}
-
-			::-webkit-scrollbar-track:hover {
-				background-image: url("images/yLineHover.png");
-				background-repeat: repeat-y;
-			}
-
-			::-webkit-scrollbar-corner {
-				background: rgb(100, 0, 255);
-			}
-
-   			body {
-      			background-image: url("images/background.jpg");
-      			background-attachment: fixed;
-      			background-color: rgb(0, 0, 0);
-      			color: rgb(255, 255, 255);
-      			font-family: Arial, Helvetica, sans-serif;
-      		}
-
-      		table {
-      			background-color: rgb(0, 0, 0);
-      			border: 1px solid rgb(255, 255, 255);
-      			border-radius: 20px;
-      			padding: 3%;
-      			margin-left: auto;
-  				margin-right: auto;
-  				width: 85%;
-      		}
-
-   			td.info {
-     			vertical-align: top;
-   			}
-
-   			td.project {
-   				display: flex;
-   			}
-
-      		h1 {
-      			text-shadow: 0px 5px rgb(100, 0, 255);
-      			font-weight: bold;
-      		}
-
-      		h2 {
-      			text-shadow: 0px 2px rgb(100, 0, 255);
-      			font-weight: bold;
-      		}
-
-   			img {
-      			margin: 15px 15px 15px 15px;
-      			box-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
-   			}
-
-   			img.me {
-   				border-radius: 10px;
-      			box-shadow: 0px 1px 5px white, -1px 0px 5px white, 0px -1px 5px white, -1px -1px 5px white;
-   			}
-
-   			div.project {
-   				flex-basis: 60%;
-   			}
-
-   			a {
-      			color: rgb(255, 255, 255);
-   				text-decoration: underline;
-   			}
-
-   			a:hover {
-   				color: rgba(255, 255, 255, 0);
-   				text-shadow: 0px -3px rgb(255, 255, 255);
-   			}
-
-   			iframe {
-   				float: right;
-   				margin: auto;
-   				display: block;
-   				width: 640px;
-   				height: 360px;
-   			}
-
-   			hr {
-      			border: 1px solid rgb(255, 255, 255);
-  			}
-
-  			@media only screen and (max-width: 1600px) {
-  				td.project {
-    				display: inline;
-  				}
-
-  				iframe{
-  					float: none;
-  				}
-			}
-
- 		</style>
+		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
 		<table>
@@ -135,12 +21,13 @@
 	  				</p> 
     			</td>
     			<td>
-					<img src="images/me.png" alt="Picture of me" width=150px class="me"></img>
+					<img src="images/me.jpg" alt="Picture of me" width=150px class="me"></img>
     			</td>
   			</tr>
   		</table>
   		<br>
-  		<!-- <table>
+  		<!-- contents - could be hamburger?
+  		<table>
   			<tr>
     			<td class="info">
       				<h2>Contents</h2>
@@ -268,5 +155,6 @@
     			</td>
   			</tr>
 		</table>
+		<script src="index.js"></script>
 	</body>
 </html>
