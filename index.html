@@ -1,178 +1,302 @@
 <!DOCTYPE html>
 <html>
-	<!--
-		button for light and dark mode
-		lightbox/gallery
-	-->
-	<head>
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<table>
-  			<tr>
-    			<td class="info">
-      				<h1>Paulius KANCLERIS</h1>
-      				<p>
-      					A diligent and committed Computer Science student looking for a placement/internship role in the IT sector to
-      					broaden my skill set. Having received high grades from 6th Form and the first year of a bachelor’s degree, I now
-      					pursue the experience required to start my career in technology. My long-term goal currently is to lead large
-      					projects that have significant impacts on their audience. This would also be ideally linked to interests such as
-      					basketball or gaming. 
-	  				</p> 
-    			</td>
-    			<td>
-					<img src="images/me.jpg" alt="Picture of me" width=150px class="me"></img>
-    			</td>
-  			</tr>
-  		</table>
-  		<br>
-  		<!-- contents - could be hamburger?
-  		<table>
-  			<tr>
-    			<td class="info">
-      				<h2>Contents</h2>
-      				<p>
-      					-
-	  				</p> 
-    			</td>
-  			</tr>
-  		</table>
-  		<br> -->
-  		<table>
-  			<tr>
-  				<td class="info project">
-  					<div class="project">
-    					<h2>Pong</h2>
-    					<p>
-							This was a project that concluded a 2 week Programming Bootcamp (2020) at City, University of London. Using
-							Processing, I demonstrated a comprehensive understanding of the use of classes and 'if' statements. I also showed
-							some understanding of how the random function can be used and how physics principles can be recreated.
-						</p>
-						<p>
-							I began by creating the class for the gameplay screen. This consisted of ball movement, collision of the ball with
-							the paddles and walls, and the controls for the paddles. To make the ball move, I had to make the x and y
-							co-ordinates update by a variable that I named 'speed'. The collision was created using if statements comparing the
-							co-ordiantes of the ball and paddles. Finally, I created the menu and victory screans to give some context to the
-							game.
-						</p>
-						<p>
-							This was as far as my designs went but I decided to expand on them. I wanted to create an additional game mode where
-							1 player was able to play against the computer. This resulted in me having to create a screen to select the number of
-							players and a screen for the player losing. My final addition was having the player select between 3 difficulties
-							when they play against the computer. This is where I used randomness to determine how accurate the computer was at
-							hitting the ball back. The final step was to add sound to make the game more interesting to play.
-    					</p>
-    					<p>
-    						This project taught me the importance of efficient code. After adding sound, I found that it would eventually start to
-    						bug. This was because it would create new sound files every time I restarted the game using the UI. To fix this, I
-    						made sure the sound files were only created once in the setup method at the start. Something that I could have
-    						improved was the movement of the computer. At times, it would move a lot faster than a player would be able to but it
-    						would then miss the ball. This makes it seem like the computer missed on purpose. To make the computer move slower, I
-    						would have to increase the delay between the up and down movements.
-    					</p>
-    					<p>
-      						Check out the code on <a href="https://github.com/paul-kanc/Pong">Github</a>.
-    					</p>
-    				</div>
-					<iframe src="https://www.youtube-nocookie.com/embed/AGHxM_9yC-U" title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-  				</td>
-  			</tr>
-  			<tr>
- 				<td align=center>
-					<img src="images/pong/start screen.png" width="300">
-					<img src="images/pong/difficulty screen.png" width="300">
-					<img src="images/pong/gameVPC.png" width="300">
-					<img src="images/pong/game.png" width="300">
-					<img src="images/pong/score.png" width="300">
+<head>
+	<title>Paulius Kancleris - Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body translate="no">
+	<nav id="nav" class="nav">
+		<table class="nav-table">
+			<tr class="top">
+				<td>
+					<div><a href="#me" class="menu-link">Paulius Kancleris</a></div>
 				</td>
- 			</tr>
- 			<tr>
-    			<td>
-					<hr>
-    			</td>
-  			</tr>
-  			<tr>
-  				<td class="info project">
-  					<div class="project">
-    					<h2>Forest Jumper</h2>
-    					<p>
-							This project was completed for a Java module during my 1st year of university. I created a platform
-							game with levels, sound, a GUI and a save/load feature. In this project, I demonstarted an understanding of an
-							object-oriented language features such as inheritance and encapsulation.
-						</p>
-						<p>
-							I had to import a physic engine provided to me by the university. Then I started by playing around with the basic
-							features such as collision to walk on the floor and collect coins. Once I was able to end the game when a level
-							was completed, I added villains and increased the number of levels. The villains would remove the player's lives and
-							make the player start the level from the beginning if they collide. I also added instructions and the ability to
-							pause the game.
-						</p>
-						<p>
-							Although the game was functioning, I wanted to make it more polished. To do this, I added a powerup, sound and a GUI.
-							The powerup was a bomb that the player had to pick up to kill the villains. Every time I added a new sound clip, I
-							surrounded it with a try-catch block. This was so I could print an exception to the console if there were errors. As
-							I was creating the GUI, I decided to add 3 difficulties and a low gravity mode. The difficulties would change the
-							speed of the villains and the low gravity mode would edit the simulated gravity.
-						</p>
-						<p>
-							I also added a saving/loading feature and a high score table. If the game is being saved, it would save the necessary
-							information to a text file. When loading it back from the main menu, the game would look for that file and read it.
-							The high score table would also save and read from a text file. The table is presented when the player finishes the
-							game and a score can only be saved at this point. This is because the score is based on how long the player takes to
-							finish the game.
-						</p>
-						<p>
-							Something new that I learned from this project was how I can keep my program running even after it encounters an
-							error. I used try-catch blocks when introducing sound clips. My game shouldn't have to crash if a sound file wasn't
-							found because it's not an error that changes the game drastically. Something that I could have improved was my use
-							of comments and the tidiness of my code. When looking over my code during development, I found that I would
-							occasionally forget the functions of certain lines. Using comments would have allowed me to create reminders of what
-							those lines did. Tidier code would have also made tracking back quicker.
-						</p>
-						<p>
-      						Check out the code on <a href="https://github.com/paul-kanc/ForrestJumper">Github</a>.
-    					</p>
-    				</div>
-					<iframe src="https://www.youtube-nocookie.com/embed/VK7lq2n3gfs" title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
-  				</td>
-  			</tr>
-			<tr>
- 				<td align=center>
-					<img src="images/forrestJumper/mainMenu.png" width="300">
-					<img src="images/forrestJumper/level1.png" width="300">
-					<img src="images/forrestJumper/level6.png" width="300">
-					<img src="images/forrestJumper/level9.png" width="300">
-					<img src="images/forrestJumper/highscores.png" width="300">
+			</tr>
+			<tr class="projects">
+				<td>
+					<div class="image-box">
+						<a href="#project1" class="menu-link">
+							<img src="images/pong/startScreen.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project1" class="menu-link">
+								<h1>Pong</h1>
+								<h2>Retro Single / Multiplayer Game</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project2" class="menu-link">
+							<img src="images/forestJumper/level9.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project2" class="menu-link">
+								<h1>Forest Jumper</h1>
+								<h2>Single Player Platform Game</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project3" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project3" class="menu-link">
+								<h1>Project 3</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project4" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project4" class="menu-link">
+								<h1>Project 4</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project5" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project5" class="menu-link">
+								<h1>Project 5</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project6" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project6" class="menu-link">
+								<h1>Project 6</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project7" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project7" class="menu-link">
+								<h1>Project 7</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project8" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project8" class="menu-link">
+								<h1>Project 8</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project9" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project9" class="menu-link">
+								<h1>Project 9</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
+					<div class="image-box">
+						<a href="#project10" class="menu-link">
+							<img src="images/comingSoonNav.png" title="" alt="">
+						</a>
+						<div class="text-box">
+							<a href="#project10" class="menu-link">
+								<h1>Project 10</h1>
+								<h2>Coming Soon</h2>
+								<p></p>
+							</a>
+						</div>
+					</div>
 				</td>
- 			</tr>
- 			<tr>
-    			<td>
-					<hr>
-    			</td>
-  			</tr>
-  			<tr>
-  				<td class="info project">
-  					<div class="project">
-    					<h2>Paul's Calculator</h2>
-    					<p>
-							Calculator was made.
-						</p>
-						<p>
-      						Check out the code on <a href="https://github.com/paul-kanc/Calculator">Github</a>.
-    					</p>
-    				</div>
-  				</td>
-  			</tr>
- 			<tr>
-    			<td>
-					<hr>
-    			</td>
-  			</tr>
+			</tr>
+			<tr class="button">
+				<td id="ham">
+					<div class="ham-btn" id="ham-btn">
+						<div class="icon"></div>
+					</div>
+				</td>
+			</tr>
 		</table>
-		<script src="index.js"></script>
-	</body>
+	</nav>
+	<main>
+		<div class="content">
+			<section class="no-scroll">
+				<div class="me" id="me">
+					<div class="text">
+						<h1 class="upper-intro">I'm Paulius Kancleris</h1>
+						<h1 class="lower-intro">Computer Science undergraduate at City, University of London</h1>
+						<h1 class="lower-intro">Aspiring Software Engineer</h1>
+						<br>
+						<div class="cv-btn">
+         					<button type="button" onclick="window.open('https://cityuni-my.sharepoint.com/:b:/g/personal/paulius_kancleris_city_ac_uk/ETWj3tKyRGdDiHVn-3h5UK0BM5rdbV7KbdFcWrfQoaLDoA?download=1','_blank')">Download CV</button>
+         				</div>
+         			</div>
+					<div class="picture">
+						<img src="images/me.jpg">
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="slideshow-container" id="project1">
+
+					<div class="img-div1 fade">
+						<img src="images/pong/startScreen.png">
+					</div>
+
+					<div class="img-div1 fade">
+						<img src="images/pong/difficultyScreen.png">
+					</div>
+
+					<div class="img-div1 fade">
+						<img src="images/pong/gameVPC.png">
+					</div>
+
+					<div class="img-div1 fade">
+						<img src="images/pong/game.png">
+					</div>
+
+					<div class="img-div1 fade">
+						<img src="images/pong/score.png">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+					<a class="next" onclick="plusSlides(1, 0)">❯</a>
+				</div>
+				<div class="description">
+					<h2>Pong</h2>
+					<br>
+					<p>Type: Single / Multiplayer Game</p>
+					<p>Language Used: Processing</p>
+					<br><br>
+					<h2>Description</h2>
+					<br>
+					<p>I started the game by creating a moving ball that would collide with the edge of the screen. This then evolved
+						to have colision with controllable paddles and menu screens. The original design for this game was for it to
+						be multiplayer only. After finding it relatively simple to make, I decided to challenge myself and create a
+						single player mode where the right paddle would move on its own. I made the paddle track the y co-ordinate of
+						the ball and used the 'random' function to create an error margin for the lower levels.</p>
+				</div>
+			</section>
+
+			<section>
+				<div class="slideshow-container" id="project2">
+
+					<div class="img-div2 fade">
+						<img src="images/forestJumper/mainMenu.png">
+					</div>
+
+					<div class="img-div2 fade">
+						<img src="images/forestJumper/level1.png">
+					</div>
+
+					<div class="img-div2 fade">
+						<img src="images/forestJumper/level6.png">
+					</div>
+
+					<div class="img-div2 fade">
+						<img src="images/forestJumper/level9.png">
+					</div>
+
+					<div class="img-div2 fade">
+						<img src="images/forestJumper/highscores.png">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+					<a class="next" onclick="plusSlides(1, 1)">❯</a>
+				</div>
+				<div class="description">
+					<h2>Forest Jumper</h2>
+					<br>
+					<p>Type: Single Player Platform Game</p>
+					<p>Language Used: Java</p>
+					<br><br>
+					<h2>Description</h2>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</section>
+
+			<!--<section>
+				<div class="slideshow-container" id="project3">
+
+					<div class="img-div3 fade">
+						<img src="images/comingSoon.png">
+					</div>
+
+					<div class="img-div3 fade">
+						<img src="images/comingSoon.png">
+					</div>
+
+					<div class="img-div3 fade">
+						<img src="images/comingSoon.png">
+					</div>
+
+					<div class="img-div3 fade">
+						<img src="images/comingSoon.png">
+					</div>
+
+					<div class="img-div3 fade">
+						<img src="images/comingSoon.png">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+					<a class="next" onclick="plusSlides(1, 2)">❯</a>
+				</div>
+				<div class="description">
+					<h2>Lorem ipsum</h2>
+					<br>
+					<p>Type: Lorem ipsum dolor sit amet</p>
+					<p>Language Used: Lorem ipsum</p>
+					<br><br>
+					<h2>Description</h2>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</section>-->
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
 </html>
