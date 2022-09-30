@@ -10,7 +10,6 @@
 
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner {
     background: rgb(100, 0, 255);
-    border: 2px solid black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -28,13 +27,14 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: white;
-    background-image: url('images/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
     color: black;
     font-family: "Courier Prime", cursive, sans-serif;
-    font-size: 2vw;
+    font-size: 1.7vw;
     overflow-y: hidden;
 }
 
@@ -64,6 +64,10 @@ a {
     transition: transform 0.5s ease;
     color: white;
     background: rgb(100, 0, 255);
+    background-image: url('images/navBackground.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: 0 5px 10px 0 rgba(0, 0 ,0, 0.2);
 }
 
@@ -195,14 +199,13 @@ a {
 }
 
 .nav-table .button {
+    background-color: rgb(100, 0, 255);
     height: 6vh;
-    transition: 0.3s;
 }
 
 .nav-table .button:hover {
     background-color: rgb(90, 0, 230);
     cursor: pointer;
-    transition: 0s;
 }
 
 .nav-table .button:active {
@@ -288,13 +291,24 @@ main {
 
 .content section .me {
     height: 100%;
-    padding: 5%;
     display: flex;
-    align-items: center;
+    position: relative;
+}
+
+section .me .picture {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    position: absolute;
+    z-index: -1;
+}
+
+.me .picture img {
+    height: 100%;
 }
 
 section .me .text {
-    width: 50%;
+    margin: auto;
     color: rgb(100, 0, 255);
 }
 
@@ -308,39 +322,23 @@ section .me .text {
     text-decoration: none;
 }
 
-.me .text .cv-btn {
-    text-align: center;
-}
-
-.text .cv-btn button {
+.me .text button {
     color: white;
     font-size: 2vw;
     font-family: "Courier Prime", cursive, sans-serif;
     background-color: rgb(100, 0, 255);
-    padding: 2% 10%;
-    border: none;
+    padding: 1% 8%;
+    border: 2px solid rgb(70, 0, 180);
     border-radius: 12px;
-    transition: 0.3s;
 }
 
-.text .cv-btn button:hover {
+.me .text button:hover {
     background-color: rgb(90, 0, 230);
     cursor: pointer;
-    transition: 0s;
 }
 
-.text .cv-btn button:active {
+.me .text button:active {
     background-color: rgb(70, 0, 180);
-}
-
-section .me .picture {
-    width: 50%;
-    height: 100%;
-    text-align: center;
-}
-
-.me .picture img {
-    height: 100%;
 }
 
 .slideshow-container {
