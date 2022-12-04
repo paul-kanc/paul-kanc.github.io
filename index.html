@@ -44,12 +44,12 @@
 					</div>
 					<div class="image-box">
 						<a href="#project3" class="menu-link">
-							<img src="images/comingSoonNav.png" title="" alt="">
+							<img src="images/calculator/completeExpression.png" title="" alt="">
 						</a>
 						<div class="text-box">
 							<a href="#project3" class="menu-link">
-								<h1>Project 3</h1>
-								<h2>Coming Soon</h2>
+								<h1>Calculator</h1>
+								<h2>My into to Python</h2>
 								<p></p>
 							</a>
 						</div>
@@ -140,8 +140,11 @@
 					</div>
 				</td>
 			</tr>
-			<tr class="button">
+			<tr class="button transform" id="button">
 				<td id="ham">
+						<div class="label">
+							<h3>Projects</h3>
+						</div>
 					<div class="ham-btn" id="ham-btn">
 						<div class="icon"></div>
 					</div>
@@ -154,7 +157,7 @@
 			<section class="no-scroll">
 				<div class="me" id="me">
 					<div class="picture">
-						<img src="images/portrait.png">
+						<img src=".png">
 					</div>
 					<div class="text">
 						<h1 class="upper-intro">I'm Paulius Kancleris</h1>
@@ -200,11 +203,13 @@
 					<br><br>
 					<h2>Description</h2>
 					<br>
-					<p>I started the game by creating a moving ball that would collide with the edge of the screen. This then evolved
+					<p>
+						I started the game by creating a moving ball that would collide with the edge of the screen. This then evolved
 						to have colision with controllable paddles and menu screens. The original design for this game was for it to
 						be multiplayer only. After finding it relatively simple to make, I decided to challenge myself and create a
 						single player mode where the right paddle would move on its own. I made the paddle track the y co-ordinate of
-						the ball and used the 'random' function to create an error margin for the lower levels.</p>
+						the ball and used the 'random' function to create an error margin for the lower levels.
+					</p>
 				</div>
 			</section>
 
@@ -242,58 +247,53 @@
 					<br><br>
 					<h2>Description</h2>
 					<br>
-					<p>I started by importing a physics engine created by my university. Once I understood the basic features such as
+					<p>
+						I started by importing a physics engine created by my university. Once I understood the basic features such as
 						collision to walk on the floor and collect coins, I created a version of the game consisting of a single level
 						that would end after all coins were collected. The game then progressed with the addition of mroe levels and
 						villains that would remove lives when collided with. The final touches included instructions, the ability to
 						pause the game, a power-up that would allow the villains to be destroyed, sound and a GUI. To further improve
 						the game, I added 3 difficulties that would change the speed of the villains, a low gravity mode that would
-						reduce the variable controlling gravity and a high score table that would read and write from a txt file.</p>
+						reduce the variable controlling gravity and a high score table that would read and write from a txt file.
+					</p>
 				</div>
 			</section>
 
-			<!--<section>
+			<section>
 				<div class="slideshow-container" id="project3">
 
 					<div class="img-div3 fade">
-						<img src="images/comingSoon.png">
+						<img src="images/calculator/main.png">
 					</div>
 
 					<div class="img-div3 fade">
-						<img src="images/comingSoon.png">
+						<img src="images/calculator/incompleteExpression.png">
 					</div>
 
 					<div class="img-div3 fade">
-						<img src="images/comingSoon.png">
-					</div>
-
-					<div class="img-div3 fade">
-						<img src="images/comingSoon.png">
-					</div>
-
-					<div class="img-div3 fade">
-						<img src="images/comingSoon.png">
+						<img src="images/calculator/completeExpression.png">
 					</div>
 
 					<a class="prev" onclick="plusSlides(-1, 2)">❮</a>
 					<a class="next" onclick="plusSlides(1, 2)">❯</a>
 				</div>
 				<div class="description">
-					<h2>Lorem ipsum</h2>
+					<h2>Calculator</h2>
 					<br>
-					<p>Type: Lorem ipsum dolor sit amet</p>
-					<p>Language Used: Lorem ipsum</p>
+					<p>Type: Basic Calculator</p>
+					<p>Language Used: Python</p>
 					<br><br>
 					<h2>Description</h2>
 					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>
+						I used the Tkinter module to design the GUI and used partial functions to give the buttons their functionality.
+						The functions that the calculator can perform include addition, subtraction, division, multiplication, negation,
+						bracketing and powers. Before inserting the relevant information into an expression, checks are made to ensure
+						that what is being inserted will result in a valid expression (e.g. 3+-/8( is not valid). The calculator
+						will not allow the user to create an invalid expression.
+					</p>
 				</div>
-			</section>-->
+			</section>
 		</div>
 	</main>
 	<script src="index.js"></script>

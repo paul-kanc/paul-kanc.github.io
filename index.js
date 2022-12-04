@@ -1,6 +1,7 @@
 //Hamburger Navigation
 const nav = document.getElementById("nav");
 const menuItems = document.querySelectorAll(".menu-link");
+const button = document.getElementById("button");
 const ham = document.getElementById("ham");
 const hamBtn = document.getElementById("ham-btn");
 
@@ -11,6 +12,7 @@ menuItems.forEach(menuItem => {
 ham.addEventListener("click", toggleHamburger);
 
 function toggleHamburger() {
+  button.classList.toggle("transform");
 	nav.classList.toggle("show-nav");
 	hamBtn.classList.toggle("open");
 }
