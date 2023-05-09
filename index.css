@@ -1,429 +1,454 @@
-::-webkit-scrollbar { 
-    width: 12px;
-    border: none;
-    background: transparent;
+::-webkit-scrollbar {
+	width: 12px;
+	border: none;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px gray; 
+	box-shadow: inset 0 0 5px gray;
 }
 
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-corner {
-    background: rgb(100, 0, 255);
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-corner {
+	background: rgb(100, 0, 255);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: white;
-    border: 1px solid rgb(100, 0, 255);
+	background: white;
+	border: 1px solid rgb(100, 0, 255);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-    background-image: url('images/background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
-    color: black;
-    font-family: "Courier Prime", cursive, sans-serif;
-    font-size: 1.7vw;
-    overflow-y: hidden;
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+	background-image: url('images/background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100%;
+	color: black;
+	font-family: "Courier Prime", cursive, sans-serif;
+	font-size: 1.7vw;
+	overflow-y: hidden;
 }
 
-h1, h2 {
-    font-family: "Audiowide", cursive, sans-serif;
-    text-decoration: underline;
+h1,
+h2 {
+	font-family: "Audiowide", cursive, sans-serif;
+	text-decoration: underline;
 }
 
 h1 {
-    font-size: 4vw;
+	font-size: 4vw;
 }
 
 h2 {
-    font-size: 3vw;
+	font-size: 3vw;
 }
 
 h3 {
-    font-family: "Audiowide", cursive, sans-serif;
-    font-weight: 100;
+	font-family: "Audiowide", cursive, sans-serif;
+	font-weight: 100;
 }
 
 a {
-    color: white;
+	color: white;
 }
 
 .nav {
-    position: fixed;
-    z-index: 101;
-    width: 100vw;
-    height: 100vh;
-    transform: translateY(-94vh);
-    transition: transform 0.5s ease;
-    color: white;
-    background: rgb(100, 0, 255);
-    background-image: url('images/navBackground.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
+	position: fixed;
+	z-index: 101;
+	width: 100vw;
+	height: 100vh;
+	transform: translateY(-94vh);
+	transition: transform 0.5s ease;
+	color: white;
+	background: rgb(100, 0, 255);
+	background-image: url('images/navBackground.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .show-nav {
-    transform: translate(0, 0);
+	transform: translate(0, 0);
 }
 
 .nav-table {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-collapse: collapse;
 }
 
 .nav-table .top {
-    background-color: rgb(100, 0, 255);
-    height: 7vh;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	height: 7vh;
 }
 
 .nav-table .top div {
-    position: relative;
-    display: block;
-    width: 25%;
-    margin: auto;
+	position: relative;
+	display: block;
+	width: 25%;
+	margin: auto;
 }
 
 .nav-table .top a {
-    font-family: "Audiowide", cursive, sans-serif;
-    font-size: 2vw;
-    text-decoration: none;
-    transition: 0.3s;
+	font-family: "Audiowide", cursive, sans-serif;
+	font-size: 2vw;
+	text-decoration: none;
+	transition: 0.3s;
 }
 
 .nav-table .top a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0.8);
-    background-color: white;
-    transition: 0.4s;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0.8);
+	background-color: white;
+	transition: 0.4s;
 }
 
 .nav-table .top a:hover {
-    font-size: 2.2vw;
-    transition: 0.3s;
+	font-size: 2.2vw;
+	transition: 0.3s;
 }
 
 .nav-table .top a:hover:after {
-    transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 .nav-table .projects {
-    height: 87vh;
+	height: 87vh;
 }
 
 .nav-table .projects td {
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .nav-table .projects .image-box {
-    position: relative;
-    overflow: hidden;
-    height: 30vh;
-    width: 30vh;
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    background-color: lightgray;
-    border: 2px solid white;
+	position: relative;
+	overflow: hidden;
+	height: 30vh;
+	width: 30vh;
+	margin: 1%;
+	display: flex;
+	justify-content: center;
+	background-color: lightgray;
+	border: 2px solid white;
 }
 
 @media only screen and (max-width: 100vh) {
-    .nav-table .projects .image-box {
-        height: 23vw;
-        width: 23vw;
-    }
+	.nav-table .projects .image-box {
+		height: 23vw;
+		width: 23vw;
+	}
 }
 
 .nav-table .projects .image-box img {
-    height: 100%;
-    transition: 0.5s;
+	height: 100%;
+	transition: 0.5s;
 }
 
 .nav-table .projects .image-box:hover img {
-    transform: scale(1.5)
+	transform: scale(1.5)
 }
 
 .nav-table .projects .image-box .text-box {
-    position: absolute;
-    top: 100%;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 52, 68, 0.5);
-    transition: 0.5s;
+	position: absolute;
+	top: 100%;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 52, 68, 0.5);
+	transition: 0.5s;
 }
 
 .nav-table .projects .image-box:hover .text-box {
-    top: 0;
+	top: 0;
 }
 
 .nav-table .projects .image-box .text-box h1 {
-    text-decoration: none;
-    position: absolute;
-    top: 15%;
-    width: 100%;
-    font-size: 1.5vw;
+	text-decoration: none;
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	font-size: 1.5vw;
 }
 
 .nav-table .projects .image-box .text-box h2 {
-    text-decoration: none;
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    font-size: 1.3vw;
+	text-decoration: none;
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	font-size: 1.3vw;
 }
 
 .nav-table .projects .image-box .text-box p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .nav-table .button {
-    background-color: rgb(100, 0, 255);
-    height: 6vh;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-    transition-duration: 0.3s;
+	background-color: rgb(100, 0, 255);
+	height: 6vh;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	transition-duration: 0.3s;
 }
 
 .nav-table .button:hover {
-    background-color: rgb(80, 0, 205);
-    cursor: pointer;
-    transition-duration: 0.3s;
+	background-color: rgb(80, 0, 205);
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
 
 .transform:hover {
-    transform: translateY(10px);
+	transform: translateY(10px);
 }
 
 .nav-table .button:active {
-    background-color: rgb(70, 0, 180);
+	background-color: rgb(70, 0, 180);
 
 }
 
 .ham-btn {
-    margin: 0 auto;
-    padding: auto;
-    height: 30px;
-    width: 30px;
-    transition-duration: 0.5s;
+	margin: 0 auto;
+	padding: auto;
+	height: 30px;
+	width: 30px;
+	transition-duration: 0.5s;
 }
 
 .ham-btn .icon {
-    position: absolute;
-    transition-duration: 0.5s;
-    height: 4px;
-    width: 30px;
-    border-radius: 4px;
-    background-color: white;
-    transform: translateY(13px);
+	position: absolute;
+	transition-duration: 0.5s;
+	height: 4px;
+	width: 30px;
+	border-radius: 4px;
+	background-color: white;
+	transform: translateY(13px);
 }
 
 .ham-btn .icon:before {
-    position: absolute;
-    transition-duration: 0.5s;
-    height: 4px;
-    width: 30px;
-    border-radius: 4px;
-    background-color: white;
-    content: "";
-    top: -10px;
-    left: 0px;
+	position: absolute;
+	transition-duration: 0.5s;
+	height: 4px;
+	width: 30px;
+	border-radius: 4px;
+	background-color: white;
+	content: "";
+	top: -10px;
+	left: 0px;
 }
 
 .ham-btn .icon:after {
-    position: absolute;
-    transition-duration: 0.5s;
-    height: 4px;
-    width: 30px;
-    border-radius: 4px;
-    background-color: white;
-    content: "";
-    top: 10px;
-    left: 0px;
+	position: absolute;
+	transition-duration: 0.5s;
+	height: 4px;
+	width: 30px;
+	border-radius: 4px;
+	background-color: white;
+	content: "";
+	top: 10px;
+	left: 0px;
 }
 
 .ham-btn.open .icon {
-    transition-duration: 0.5s;
-    transform: rotateZ(-270deg) translateX(13px);
+	transition-duration: 0.5s;
+	transform: rotateZ(-270deg) translateX(13px);
 }
 
 .ham-btn.open .icon:before {
-    transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -3px);
+	transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -3px);
 }
 
 .ham-btn.open .icon:after {
-    transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 3px);
+	transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 3px);
 }
 
 .label {
-    position: absolute;
-    color: white;
-    text-align: left;
-    margin-top: -0.5%;
-    padding-left: 1%;
+	position: absolute;
+	color: white;
+	text-align: left;
+	margin-top: -0.5%;
+	padding-left: 1%;
 }
 
 main {
-    height: 100vh;
-    padding-top: 6vh;
+	height: 100vh;
+	padding-top: 6vh;
 }
 
 .content {
-    height: 94vh;
-    scroll-behavior: smooth;
-    overflow-y: hidden;
+	height: 94vh;
+	scroll-behavior: smooth;
+	overflow-y: hidden;
 }
 
 .content section {
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    height: 100%;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	height: 100%;
 }
 
 .content section.no-scroll {
-    height: 100%;
-    overflow-y: hidden;
+	height: 100%;
+	overflow-y: hidden;
 }
 
 .content section .me {
-    height: 100%;
-    display: flex;
-    position: relative;
+	height: 100%;
+	display: flex;
+	position: relative;
 }
 
 section .me .picture {
-    width: 100%;
-    height: 100%;
-    text-align: right;
-    position: absolute;
-    z-index: -1;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	position: absolute;
+	z-index: -1;
 }
 
 .me .picture img {
-    height: 100%;
+	height: 100%;
 }
 
 section .me .text {
-    margin: auto;
-    color: rgb(100, 0, 255);
+	margin: auto;
+	color: rgb(100, 0, 255);
 }
 
 .me .text .upper-intro {
-    font-size: 3.5vw;
-    text-decoration: none;
+	font-size: 3.5vw;
+	text-decoration: none;
 }
 
 .me .text .lower-intro {
-    font-size: 2vw;
-    text-decoration: none;
+	font-size: 2vw;
+	text-decoration: none;
 }
 
 .me .text button {
-    color: white;
-    font-size: 2vw;
-    font-family: "Courier Prime", cursive, sans-serif;
-    background-color: rgb(100, 0, 255);
-    padding: 1% 8%;
-    border: 2px solid rgb(70, 0, 180);
-    border-radius: 12px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 2vw;
+	font-family: "Courier Prime", cursive, sans-serif;
+	background-color: rgb(100, 0, 255);
+	padding: 1% 8%;
+	border: 2px solid rgb(70, 0, 180);
+	border-radius: 12px;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .me .text button:hover {
-    background-color: rgb(90, 0, 230);
-    cursor: pointer;
-    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
-    transform: translate(2px, 3px);
+	background-color: rgb(90, 0, 230);
+	cursor: pointer;
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+	transform: translate(2px, 3px);
 }
 
 .me .text button:active {
-    background-color: rgb(70, 0, 180);
-    box-shadow: none;
-    transform: translate(3px, 5px);
+	background-color: rgb(70, 0, 180);
+	box-shadow: none;
+	transform: translate(3px, 5px);
 }
 
 .slideshow-container {
-    height: 94vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding: 2%;
+	height: 94vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	padding: 2%;
 }
 
-.img-div1, .img-div2, .img-div3, .img-div4, .img-div5, .img-div6, .img-div7, .img-div8, .img-div9, .img-div10 {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.img-div1,
+.img-div2,
+.img-div3,
+.img-div4,
+.img-div5,
+.img-div6,
+.img-div7,
+.img-div8,
+.img-div9,
+.img-div10 {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.img-div1 img, .img-div2 img, .img-div3 img, .img-div4 img, .img-div5 img, .img-div6 img, .img-div7 img, .img-div8 img, .img-div9 img, .img-div10 img {
-    height: 100%;
+.img-div1 img,
+.img-div2 img,
+.img-div3 img,
+.img-div4 img,
+.img-div5 img,
+.img-div6 img,
+.img-div7 img,
+.img-div8 img,
+.img-div9 img,
+.img-div10 img {
+	height: 100%;
 }
 
-.slideshow-container .prev, .slideshow-container .next {
-    cursor: pointer;
-    color: black;
-    position: absolute;
-    top: 45%;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 50px;
-    transition: 0.5s ease;
-    border-radius: 3px;
-    user-select: none;
+.slideshow-container .prev,
+.slideshow-container .next {
+	cursor: pointer;
+	color: black;
+	position: absolute;
+	top: 45%;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 50px;
+	transition: 0.5s ease;
+	border-radius: 3px;
+	user-select: none;
 }
 
 .slideshow-container .prev {
-    left: 2%;
+	left: 2%;
 }
 
 .slideshow-container .next {
-    right: 2%;
+	right: 2%;
 }
 
-.slideshow-container .prev:hover, .slideshow-container .next:hover {
-    background-color: rgb(80, 0, 205);
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+	background-color: rgb(80, 0, 205);
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 0.5s;
+	animation-name: fade;
+	animation-duration: 0.5s;
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
 }
 
 .content section .description {
-    height: 100%;
-    display: block;
-    padding: 2%;
-    text-align: center;
+	height: 100%;
+	display: block;
+	padding: 2%;
+	text-align: center;
 }
