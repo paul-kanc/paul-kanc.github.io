@@ -1,8 +1,3 @@
-// Add Nav Bar
-fetch('components/navBar.html').then(response => response.text()).then(data => {
-	document.getElementById('nav').innerHTML = data;
-});
-
 // Hamburger Navigation
 const nav = document.getElementById("nav");
 const menuItems = document.querySelectorAll(".menu-link");
